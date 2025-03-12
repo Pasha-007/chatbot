@@ -46,8 +46,17 @@ async def chat(request: ChatRequest, _: bool = Depends(verify_api_key)):
     if not request.messages:
         raise HTTPException(status_code=400, detail="No messages provided")
     
-    # Format messages for OpenAI API
-    messages = [{"role": msg.role, "content": msg.content} for msg in request.messages]
+    # Format messages for OpenAI API and ensure valid roles
+    messages = []
+    for msg in request.messages:
+        # Ensure role is one of the valid options
+        if msg.role not in ["system", "assistant", "user", "function", "tool", "developer"]:
+            # Default to "user" if invalid role
+            role = "user"
+        else:
+            role = msg.role
+        
+        messages.append({"role": role, "content": msg.content})
     
     # Get response from OpenAI
     response_text = await openai_service.get_chat_response(messages)

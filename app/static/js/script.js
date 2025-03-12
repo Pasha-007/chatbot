@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const userInput = document.getElementById('user-input');
     const sendButton = document.getElementById('send-button');
     
-    // Store conversation history
+    // Store conversation history with valid roles
     let messageHistory = [
         { role: "assistant", content: "Hello! I'm your AI assistant. How can I help you today?" }
     ];
