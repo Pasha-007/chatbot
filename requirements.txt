@@ -1,0 +1,23 @@
+annotated-types==0.7.0
+anyio==4.8.0
+certifi==2025.1.31
+click==8.1.8
+distro==1.9.0
+fastapi==0.115.11
+h11==0.14.0
+httpcore==1.0.7
+httpx==0.28.1
+idna==3.10
+jiter==0.9.0
+openai==1.66.2
+pydantic==2.10.6
+pydantic_core==2.27.2
+python-dotenv==1.0.1
+setuptools @ file:///opt/homebrew/Cellar/python%403.11/3.11.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/ensurepip/_bundled/setuptools-75.6.0-py3-none-any.whl#sha256=54a7ae304903d337f94b29f2f1cb11fda9061ff69cac86ee0574948c517f4ef3
+sniffio==1.3.1
+starlette==0.46.1
+tqdm==4.67.1
+typing_extensions==4.12.2
+uvicorn==0.34.0
+wheel @ file:///opt/homebrew/Cellar/python%403.11/3.11.11/libexec/wheel-0.45.1-py3-none-any.whl#sha256=cb08b70ae9b5130ed59c4b02b299bcbcd26f05eb9fea701ce5e07f7c93f2ab92
+jinja2==3.1.3
